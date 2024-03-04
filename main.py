@@ -1,4 +1,4 @@
-# Initialize an empty list to store tasks
+# To Do List Initialize an empty list to store tasks
 tasks = []
 
 def show_list():
