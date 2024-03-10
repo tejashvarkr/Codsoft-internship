@@ -2,9 +2,7 @@
 tasks = []
 
 def show_list():
-  """
-  Prints all tasks in the list, numbered.
-  """
+
   if tasks:
     for i, task in enumerate(tasks):
       print(f"{i+1}. {task}")
@@ -12,16 +10,12 @@ def show_list():
     print("No tasks in the list!")
 
 def add_task(task):
-  """
-  Adds a new task to the list.
-  """
+  
   tasks.append(task)
   print(f"Task '{task}' added!")
 
 def remove_task(index):
-  """
-  Removes a task from the list by its index.
-  """
+
   if index < 1 or index > len(tasks):
     print("Invalid task index!")
     return
@@ -29,9 +23,7 @@ def remove_task(index):
   print(f"Task '{task}' removed!")
 
 def check_task(index):
-  """
-  Marks a task as completed by index.
-  """
+
   if index < 1 or index > len(tasks):
     print("Invalid task index!")
     return
@@ -39,9 +31,7 @@ def check_task(index):
   print(f"Task '{tasks[index-1]}' marked as completed!")
 
 def main():
-  """
-  Main loop for user interaction.
-  """
+
   print("Welcome to your To-Do List App!")
   while True:
     print("\nOptions:")
